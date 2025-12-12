@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumpFun Sniper Bot | Advanced Solana Trading Bot</title>
+    <meta name="description" content="The most advanced Solana trading bot for pump.fun. Automated sniping, advanced filters, and real-time profit tracking.">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/modern.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="mevbotsniper/2025/02/cropped-logo-300x300.png" sizes="192x192" />
+
+<link rel="canonical" href="https://solsniper.trading/" />
+<meta property="og:url" content="https://solsniper.trading/" />
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+               <img
+                width="50"
+                height="50"
+                src="mevbotsniper/2025/02/cropped-logo-86x86.png"
+                class="custom-logo"
+                alt="PumpFun Sniper bot"
+                />
+                <span>PumpFun Sniper</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="prices/index.html" class="nav-link">Pricing</a>
+                <a href="referral/index.html" class="nav-link">Referral Program</a>
+                <a href="faq/index.html" class="nav-link">FAQ</a>
+                <a href="contact/index.html" class="nav-link">Contact</a>
+                <a href="source-code/index.html" class="nav-link">Source Code</a>
+                <a href="trading/vipdetect.html" class="nav-link nav-cta">🚀 Launch Bot</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Ratings Section -->
+    <section class="ratings-bar">
+        <div class="ratings-container">
+            <div class="rating-item">
+                <div class="rating-badge">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="rating-score">4.9/5</span>
+                </div>
+                <span class="rating-label">Project Rating</span>
+            </div>
+            <div class="rating-divider"></div>
+            <div class="rating-item">
+                <div class="rating-badge trustpilot">
+                    <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg" alt="Trustpilot" class="trustpilot-logo">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-score">4.7/5</span>
+                </div>
+                <span class="rating-label">Trustpilot Score</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Advanced Solana Bot</span>
+                </div>
+                <h1 class="hero-title">
+                    Dominate <span class="gradient-text">PumpFun</span><br>
+                    With Lightning Speed
+                </h1>
+                <p class="hero-description">
+                    The most advanced Solana trading bot for pump.fun. Automated sniping, 
+                    advanced safety filters, and real-time profit tracking. Start trading 
+                    with confidence today.
+                </p>
+                <div class="hero-buttons">
+                    <a href="trading/vipdetect.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Launch Bot Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        View Features
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">100K+</span>
+                        <span class="stat-label">Successful Trades</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">&lt;10ms</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="trading-interface">
+                    <div class="interface-header">
+                        <div class="status-indicator"></div>
+                        <span>Live Trading Dashboard</span>
+                    </div>
+                    <div class="interface-content">
+                        <div class="trading-pair">
+                            <span class="pair">Successful Trades</span>
+                            <span class="price">100K+</span>
+                            <span class="change positive">99.9%</span>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div class="chart-line"></div>
+                        </div>
+                        <div class="quick-stats">
+                            <div class="quick-stat">
+                                <span class="label">Volume</span>
+                                <span class="value">$3.2M</span>
+                            </div>
+                            <div class="quick-stat">
+                                <span class="label">Online Traders</span>
+                                <span class="value">917</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our Bot?</h2>
+                <p class="section-description">
+                    Advanced features designed for serious traders who demand speed, 
+                    accuracy, and safety in their Solana trading operations.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">Powered by Advanced AI</h3>
+                    <p class="feature-description">
+                        This bot operates on the most powerful and fastest AI technology, 
+                        analyzing market patterns and executing trades with superhuman speed and precision.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Speed Trading</h3>
+                    <p class="feature-description">
+                        Execute trades in under 50ms with our ultra-optimized infrastructure. 
+                        Be first to every opportunity with quantum-fast execution speeds.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Risk Protection</h3>
+                    <p class="feature-description">
+                        Our intelligent AI algorithms automatically detect scams, rug-pulls, 
+                        and honeypots before you invest, protecting your capital 24/7.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3 class="feature-title">Smart Profit Maximization</h3>
+                    <p class="feature-description">
+                        Advanced machine learning models predict optimal entry and exit points, 
+                        automatically maximizing your profits while minimizing risks.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="feature-title">24/7 Market Monitoring</h3>
+                    <p class="feature-description">
+                        Never miss a profitable opportunity! Our AI continuously monitors 
+                        the entire Solana ecosystem, alerting you to potential gems instantly.
+                    </p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Mobile-First Design</h3>
+                    <p class="feature-description">
+                        Trade anywhere, anytime with our fully responsive mobile interface. 
+                        Full functionality optimized for all devices and screen sizes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot Settings Section -->
+    <section id="settings" class="settings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Configure Your Trading Strategy</h2>
+                <p class="section-description">
+                    Customize your bot settings to match your trading style and risk tolerance.
+                </p>
+            </div>
+            <div class="settings-container">
+                <div class="settings-form">
+                    <form id="botSettingsForm">
+                        <div class="form-group">
+                            <label for="minAmount">Minimum Amount (SOL)</label>
+                            <input type="number" id="minAmount" step="0.01" min="0.01" placeholder="0.1">
+                            <small>Minimum amount to invest per trade</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="maxAmount">Maximum Amount (SOL)</label>
+                            <input type="number" id="maxAmount" step="0.01" min="0.01" placeholder="1.0">
+                            <small>Maximum amount to invest per trade</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="slippage">Slippage Tolerance (%)</label>
+                            <input type="number" id="slippage" step="0.1" min="0.1" max="50" placeholder="5">
+                            <small>Maximum acceptable slippage percentage</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="takeProfit">Take Profit (%)</label>
+                            <input type="number" id="takeProfit" step="1" min="1" placeholder="50">
+                            <small>Target profit percentage for auto-sell</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="stopLoss">Stop Loss (%)</label>
+                            <input type="number" id="stopLoss" step="1" min="1" placeholder="30">
+                            <small>Maximum loss percentage before auto-sell</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="maxDevHold">Max Dev Hold (%)</label>
+                            <select id="maxDevHold">
+                                <option value="10">10%</option>
+                                <option value="20">20%</option>
+                                <option value="30">30%</option>
+                                <option value="40">40%</option>
+                                <option value="50">50%</option>
+                            </select>
+                            <small>Maximum developer holding percentage</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="autoSell">Auto-Sell Tokens</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="autoSell">
+                                <label for="autoSell" class="switch"></label>
+                            </div>
+                            <small>Automatically sell tokens based on profit/loss targets</small>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-full" id="saveSettings">
+                            <i class="fas fa-save"></i>
+                            Save Configuration
+                        </button>
+                    </form>
+                </div>
+                <div class="settings-preview">
+                    <div class="preview-card">
+                        <h3>Strategy Preview</h3>
+                        <div class="preview-item">
+                            <span class="label">Investment Range:</span>
+                            <span class="value" id="previewRange">0.1 - 1.0 SOL</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="label">Risk Level:</span>
+                            <span class="value" id="previewRisk">Moderate</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="label">Expected Slippage:</span>
+                            <span class="value" id="previewSlippage">5%</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="label">Profit Target:</span>
+                            <span class="value positive" id="previewProfit">+50%</span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="label">Stop Loss:</span>
+                            <span class="value negative" id="previewLoss">-30%</span>
+                        </div>
+                        <div class="preview-status">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Configuration Valid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Trading?</h2>
+                <p class="cta-description">
+                    Join thousands of successful traders using our advanced Solana bot. 
+                    Start your automated trading journey today.
+                </p>
+                <div class="cta-buttons">
+                    <a href="trading/vipdetect.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Launch Trading Bot
+                    </a>
+                    <a href="prices/index.html" class="btn btn-secondary">
+                        <i class="fas fa-tag"></i>
+                        View Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Users Say</h2>
+                <p class="section-description">
+                    Real feedback from traders who trust our platform
+                </p>
+            </div>
+            <div class="reviews-carousel">
+                <div class="reviews-track" id="reviewsTrack">
+                    <!-- Positive Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">JD</div>
+                                <div>
+                                    <h4 class="reviewer-name">John Davidson</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">2 days ago</span>
+                        </div>
+                        <p class="review-text">
+                            This bot is absolutely incredible! I've been using it for three weeks and my portfolio has grown by 340%. The AI detection for scams is spot-on and has saved me multiple times. Worth every penny!
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">SM</div>
+                                <div>
+                                    <h4 class="reviewer-name">Sarah Mitchell</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">5 days ago</span>
+                        </div>
+                        <p class="review-text">
+                            Best trading bot I've ever used! The speed is unmatched - I'm getting into trades before they even appear on pump.fun's website. Customer support is also fantastic. Highly recommend!
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">MR</div>
+                                <div>
+                                    <h4 class="reviewer-name">Marcus Rodriguez</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                        <p class="review-text">
+                            Game changer for Solana trading! The automated sniping feature works flawlessly. I've made consistent profits daily. The interface is clean and easy to use even for beginners.
+                        </p>
+                    </div>
+
+                    <!-- Neutral Review 1 -->
+                    <div class="review-card neutral">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">TC</div>
+                                <div>
+                                    <h4 class="reviewer-name">Thomas Chen</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">1 week ago</span>
+                        </div>
+                        <p class="review-text">
+                            Solid bot with good features. Works as advertised for the most part. Would be nice to have more customization options for advanced traders, but overall it's reliable and does the job well.
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">EW</div>
+                                <div>
+                                    <h4 class="reviewer-name">Emily Watson</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">2 weeks ago</span>
+                        </div>
+                        <p class="review-text">
+                            Finally found a bot that actually works! The rug-pull detection has protected me countless times. The ROI has been incredible. This is the real deal, not another scam.
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 5 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">DK</div>
+                                <div>
+                                    <h4 class="reviewer-name">David Kim</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">2 weeks ago</span>
+                        </div>
+                        <p class="review-text">
+                            Impressive technology! The bot executes trades in milliseconds. I've tried other bots before but this one is leagues ahead. The profit-tracking dashboard is beautiful too.
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 6 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">LP</div>
+                                <div>
+                                    <h4 class="reviewer-name">Lisa Parker</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">3 weeks ago</span>
+                        </div>
+                        <p class="review-text">
+                            Best investment I've made this year! The automated trading runs perfectly 24/7. Made back my subscription cost in the first day. Absolutely loving it!
+                        </p>
+                    </div>
+
+                    <!-- Neutral Review 2 -->
+                    <div class="review-card neutral">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">RB</div>
+                                <div>
+                                    <h4 class="reviewer-name">Robert Brown</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">3 weeks ago</span>
+                        </div>
+                        <p class="review-text">
+                            Good bot overall. The speed is definitely there and the interface is user-friendly. Still learning all the features. Would appreciate more tutorial content, but happy with results so far.
+                        </p>
+                    </div>
+
+                    <!-- Positive Review 7 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">AJ</div>
+                                <div>
+                                    <h4 class="reviewer-name">Alex Johnson</h4>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="review-date">1 month ago</span>
+                        </div>
+                        <p class="review-text">
+                            Outstanding performance! This bot has transformed my trading game completely. The AI safety features give me peace of mind. Customer support responds quickly too. Can't recommend enough!
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>PumpFun Sniper</span>
+                    </div>
+                    <p class="footer-description">
+                        The most advanced Solana trading bot for automated pump.fun trading 
+                        with professional-grade features and security.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#features">Features</a>
+                        <a href="prices/index.html">Pricing</a>
+                        <a href="faq/index.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <div class="footer-links">
+                        <a href="source-code/index.html">Source Code</a>
+                        <a href="contact/index.html">Contact</a>
+                        <a href="trading/vipdetect.html">Trading Dashboard</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Community</h3>
+                    <div class="social-links">
+                        <a target="_blank" href="https://t.me/Bot_PumpFun" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a target="_blank" href="https://discord.com/" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a target="_blank" href="https://x.com/Bot_PumpFun" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PumpFun Sniper Bot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
